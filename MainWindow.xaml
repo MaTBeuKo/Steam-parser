@@ -1,0 +1,32 @@
+﻿<Window x:Class="SteamParse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFshtuka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="498" Width="804" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize">
+
+    <Grid Margin="0,0,-6,-18" RenderTransformOrigin="0.502,0.948">
+        <Rectangle Fill="#1D000000" HorizontalAlignment="Left" Height="197" Margin="225,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="350"/>
+
+        <Path Data="M145.12162,300.35135" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="145.122,300.351,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+        <Path Data="M6.2702703,407.78378" Fill="Black" HorizontalAlignment="Left" Height="1" Margin="6.27,407.784,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+        <Path Data="M79.243243,367.24324" Fill="Black" HorizontalAlignment="Left" Height="1" Margin="79.243,367.243,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+        <Path Data="M35.662162,360.14865 L58.473136,213.70235 70.635258,220.79666" Fill="#FFB9B9B9" HorizontalAlignment="Left" Height="147.446" Margin="35.662,213.703,0,0" Stretch="Fill" Stroke="White" VerticalAlignment="Top" Width="35.973"/>
+        <Path Data="M448.16216,146.2973" Fill="#FFB9B9B9" HorizontalAlignment="Left" Height="1" Margin="448.162,146.297,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+        <Path Data="M138.02703,359.13514 L264.21624,388.02716 280.43271,369.78393" Fill="#FFB9B9B9" HorizontalAlignment="Left" Height="29.892" Margin="80.243,358.135,0,0" Stretch="Fill" Stroke="White" VerticalAlignment="Top" Width="143.405"/>
+        <Path Data="M700.52703,375.35135 L650.3649,198.50035 622.99987,226.87873" Fill="#FFB9B9B9" HorizontalAlignment="Left" Height="177.851" Margin="623,198.5,0,0" Stretch="Fill" Stroke="White" VerticalAlignment="Top" Width="78.527"/>
+        <Path Data="M287.01351,65.216216 L141.5806,39.378595 145.63473,57.62195" Fill="#FFB9B9B9" HorizontalAlignment="Left" Height="26.838" Margin="67.946,19.595,0,0" Stretch="Fill" Stroke="White" VerticalAlignment="Top" Width="146.433"/>
+        <Button x:Name="Start" Content="Parse!" Width="312" Margin="243,123,0,296" Foreground="Black" Background="White" FontSize="30" FontFamily="Tw Cen MT Condensed Extra Bold" Click="StartClick" HorizontalAlignment="Left"/>
+        <Path Data="M558.48649,19.594595 L669.47248,100.17527 C669.47248,100.17527 691.76974,46.458946 693.79676,52.540003" Fill="#FFB9B9B9" HorizontalAlignment="Left" Height="81.581" Margin="612.487,36.824,0,0" Stretch="Fill" Stroke="White" VerticalAlignment="Top" Width="136.31"/>
+        <Path Data="M67.945946,36.824324 L179.94589,256.25708 141.43234,244.09469" Fill="#FFB9B9B9" HorizontalAlignment="Left" Height="220.433" Margin="67.946,36.824,0,0" Stretch="Fill" Stroke="White" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="steamidinput"  HorizontalAlignment="Left" Height="49" Margin="243,19,0,0" TextWrapping="Wrap" Text="Your steamID" VerticalAlignment="Top" Width="312" FontSize="30" FontFamily="Trebuchet MS" GotFocus="steamidinput_GotFocus"/>
+        <Label x:Name="Steamname" Content="" HorizontalAlignment="Left" Margin="225,202,0,0" VerticalAlignment="Top" Width="350" Height="28"/>
+        <Label x:Name="steamid" Content="" HorizontalAlignment="Left" Margin="225.271,235.431,0,0" VerticalAlignment="Top" Width="350"/>
+        <Label x:Name="steamstate" Content="" HorizontalAlignment="Left" Margin="225.271,275.391,0,0" VerticalAlignment="Top" Width="350"/>
+        <Image x:Name="avatar" HorizontalAlignment="Left" Height="184" Margin="391.271,197.03,0,0" VerticalAlignment="Top" Width="184" RenderTransformOrigin="0.462,0.189"/>
+        <PasswordBox x:Name="apiKeyInput"  HorizontalAlignment="Left" Margin="243,76,0,0"  VerticalAlignment="Top" Width="312"/>
+        <Label x:Name="ApiLink" Foreground="Blue"  Content="Create your api key" HorizontalAlignment="Center" Margin="225,73,229,0" VerticalAlignment="Top" FontFamily="Verdana" FontStyle="Italic" FontWeight="Bold" Width="350" MouseUp="ApiLink_MouseUp" FontStretch="UltraExpanded" TextOptions.TextHintingMode="Fixed" HorizontalContentAlignment="Center" Visibility="Hidden"/>
+    </Grid>
+</Window>
